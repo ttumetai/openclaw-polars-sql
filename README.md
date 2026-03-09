@@ -65,7 +65,6 @@ docker restart openclaw
 ```
 如果是本机部署：
 直接在终端使用 `Ctrl+C` 中断当前的 OpenClaw 进程，然后重新执行启动命令即可。
-```
 
 ## 💬 经典对话示例 (Prompt Examples)
 
