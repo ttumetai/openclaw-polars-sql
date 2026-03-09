@@ -5,6 +5,8 @@
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Native_Skill-brightgreen)](https://github.com/openclaw/openclaw)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![效果预览](https://github.com/user-attachments/assets/99cc915e-369f-4e41-9d3f-63cd881b0b66)
+
 ## 📖 项目简介
 
 本项目是为 OpenClaw 框架开发的高级原生技能 (Native Skill)。它赋予了 LLM Agent 直接在其运行环境中“感知、查询、分析和可视化”本地海量结构化数据（CSV/Parquet）的能力。
