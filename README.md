@@ -35,24 +35,37 @@
 
 ## 🚀 快速部署
 
-1. **进入 OpenClaw 的技能目录**
-   ```bash
-   cd ~/.openclaw/workspace/skills/
-   git clone https://github.com/你的用户名/openclaw-polars-sql.git
-   ```
+**1. 进入 OpenClaw 的技能目录**
+```bash
+cd ~/.openclaw/workspace/skills/
+git clone https://github.com/ttumetai/openclaw-polars-sql.git
+```
 
-2. **安装核心依赖 (容器内)**
-   由于该技能运行在 OpenClaw 容器内，请进入容器并安装依赖：
-   ```bash
-   docker exec -u root -it openclaw bash
-   pip3 install polars matplotlib --break-system-packages
-   exit
-   ```
+**2. 安装核心依赖 (根据你的部署方式选择)**
 
-3. **重启网关以挂载技能**
-   ```bash
-   docker restart openclaw
-   ```
+**情况 A：使用 Docker 部署的 OpenClaw**
+由于该技能需要运行在 OpenClaw 容器内，请先进入容器再安装依赖：
+```bash
+docker exec -u root -it openclaw bash
+pip3 install polars matplotlib --break-system-packages
+exit
+```
+
+**情况 B：在本机直接运行的 OpenClaw**
+直接在你运行 OpenClaw 的本地终端 / Python 环境中安装即可：
+```bash
+pip3 install polars matplotlib
+```
+
+**3. 重启网关以挂载技能**
+
+如果是 Docker 部署：
+```bash
+docker restart openclaw
+```
+如果是本机部署：
+直接在终端使用 `Ctrl+C` 中断当前的 OpenClaw 进程，然后重新执行启动命令即可。
+```
 
 ## 💬 经典对话示例 (Prompt Examples)
 
